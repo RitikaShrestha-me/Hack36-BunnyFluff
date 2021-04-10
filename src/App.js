@@ -4,13 +4,10 @@ import './components/login/style.scss'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Contact from './components/Contact'
-// import { Login , Register } from "./components/login/index"
 import Apps from "./components/login/log&reg"
-// import logreg from "./components/login/log&reg"
-// import Hero from "./components/Hero"
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Intro from "./components/Intro";
-
+import Intro from "./components/Intro"
+import Instruction from "./components/Instruction"
 function App() {
 
   return (
@@ -33,6 +30,9 @@ function App() {
           </Route>
           <Route exact path="/Intro">
             <Intro/>
+          </Route>
+          <Route exact path="/Instruction">
+            <Instruction/>
           </Route>
         </Switch> 
       </div>
