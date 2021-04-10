@@ -1,37 +1,39 @@
 import React from "react";
 import './App.scss';
+import './components/login/style.scss'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Contact from './components/Contact'
 // import { Login , Register } from "./components/login/index"
 import Apps from "./components/login/log&reg"
+// import logreg from "./components/login/log&reg"
 // import Hero from "./components/Hero"
-// import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
 
   return (
-  //  <Router>
+   <Router>
    <div className="App">
       <Navbar/>
       <div className="contents">
-        <Home/>
+        {/* <Home/>
         <Apps/>
-        <Contact/>
-        {/* <Switch>
+        <Contact/> */}
+        <Switch>
           <Route exact path="/">
             <Home/>
           </Route>
           <Route exact path="/Apps">
-            <Apps/>
+          <Apps />
           </Route>
           <Route exact path="/Contact">
             <Contact/>
           </Route>
-        </Switch>  */}
+        </Switch> 
       </div>
     </div>
-    /* </Router> */
+     </Router> 
   );
 }
 

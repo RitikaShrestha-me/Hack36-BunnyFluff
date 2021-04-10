@@ -3,6 +3,7 @@ import hopeO from '../assets/hope-o.png';
 import dot from '../assets/dot.png'
 import help from '../assets/help.png'
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const [offsetY, setOffsetY] = useState(0);
@@ -20,10 +21,10 @@ const Hero = () => {
             <div className='hope'>
                 <img src={dot} alt="dot" className="dot-left" />
                 <div className="dot-left-content">
-                    <h3>Pandamic</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur
+                    <h3>Life in Pandemic</h3>
+                    <p class="herocontent">
+                        <i>"More the Support, Better the Strength" </i>to fight and stand. Lets Unite to be a support in this era 
+                        of Pandemic for every individual who's in need. And be a <b>Hero</b>. A Hope and a casue for the people.
                     </p>
                 </div>
                 <img src={dot} alt="dot" className="dot-right" />
@@ -34,19 +35,22 @@ const Hero = () => {
                 <img alt='Hope' style={{ transform: `translateY(min(${offsetY * 0.9}px,660px))` }} className='hope-o' src={hopeO} />
             </div>
             <div className="home-buttons">
-                <button onClick={() => window.location.href = '/Login'} className="home-buttons-button" style={{
+             
+                <button className="home-buttons-button" style={{
                     border: 'none',
                     color: 'white',
                     backgroundColor: '#3a006f',
-                }}>
-                    Sign In
+                }} >
+                   <Link to = '/Apps'> Sign In </Link>
+                       
                 </button>
-                <button onClick={() => window.location.href = '/Register'} className="home-buttons-button" style={{
+                
+                <button className="home-buttons-button" style={{
                     borderColor: '#3a006f',
                     color: '#3a006f',
                     backgroundColor: 'inherit',
                 }}>
-                    Get Contribution
+                    <Link to = '/Apps'> Get Contribution</Link>
                 </button>
             </div>
         </div>
