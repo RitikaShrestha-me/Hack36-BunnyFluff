@@ -85,7 +85,7 @@
   display: block;
   height: 40vh;
   width: auto;
-  z-index: -1;
+  z-index: -2;
   margin: 10vh auto;
 }
 
@@ -101,27 +101,30 @@
 .dot-left,.dot-right{
     position: absolute;
     width: 10rem;
+    z-index: -2;
     opacity: .3;
     &-content{
       position: absolute;
       background: rgba(200,200,200,0.2);
       backdrop-filter: blur(3px);
-      padding:0rem 2rem;
+      padding:1rem 2rem;
       max-width: 15rem;
     }
 }
 
 .dot-left-content{
-  top:6rem;
+  top:5rem;
   left:2rem;
+  z-index: -1;
 }
 .dot-right {
   right:0;
   top:8rem;
   &-content{
-    padding:0;
-    right:2rem;
-    top:0rem;
+    padding: 0;
+    z-index: -1;
+    right: 2rem;
+    top: -2rem;
   }
 }
 
@@ -139,6 +142,34 @@
   }
 }
 
+//Donate
+.donate{
+  padding: 15vh;
+  h4{
+    color: #777;
+  }
+  h2{
+    margin: 1rem;
+  }
+  &-card{
+    width: 20rem;
+    &-image{
+      .image{
+        width: 310px;
+        height: 180px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.donate-fund-cards, .donate-stuff-cards, .donate-food-cards{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+// Card
 .card{
   background-color: rgb(247, 247, 247);
   border-radius: 10px;
@@ -148,6 +179,19 @@
     width: 70%;
     max-height: 40%;
   }
+  &-body{
+    width: 90%;
+    color: #777;
+    font-weight: 600;
+  }
+  &-title{
+    font-size: 20px;
+  }
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* About */
@@ -178,55 +222,13 @@
 
 .about-contributors>p, .about-changeMakers>p{
   width: 60%;
+  margin: 1rem 0.5rem;
   line-height: 1.5;
   font-weight: 600;
 }
 
 
-/* ************************************************************************************** */
-
-// @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-
-// .Apps {
-//   text-align: center;
-//   display: flex;
-//   width: 100vw;
-//   padding-left: 50% ;
-//   justify-content: center;
-//   align-items: center;
-//   font-family: "Open Sans", sans-serif;
-// }
-
-// .Apps-logo {
-//   animation: App-logo-spin infinite 20s linear;
-//   height: 40vmin;
-//   pointer-events: none;
-// }
-
-// .Apps-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
-
-// .Apps-link {
-//   color: #3a006f;
-// }
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
-
+//login
 .App{
   width: 100vw;
 }
@@ -311,6 +313,10 @@
   border-radius: 3px;
   transition: all 250ms ease-in-out;
   cursor: pointer;
+  &-link{
+    text-decoration: none;
+    color: inherit;
+  }
   &:hover {
     background-color: #2386c8;
   }

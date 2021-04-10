@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 // import { Login , Register } from "./components/login/index"
 import Apps from "./components/login/log&reg"
+import Donate from "./components/Donate"
 // import logreg from "./components/login/log&reg"
 // import Hero from "./components/Hero"
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route exact path="/Contact">
             <Contact/>
+          </Route>
+          <Route exact path="/Donate">
+            <Donate/>
           </Route>
         </Switch> 
       </div>
