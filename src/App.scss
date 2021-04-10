@@ -110,9 +110,6 @@
       backdrop-filter: blur(3px);
       padding:0rem 2rem;
       max-width: 15rem;
-      &-text{
-
-      }
     }
 }
 
@@ -318,3 +315,12 @@
   }
 }
 
+// *******************************************************************************
+
+.Aboutcontent
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: darkslategrey;
+  font-style: normal;
+  font-weight: lighter;
+}

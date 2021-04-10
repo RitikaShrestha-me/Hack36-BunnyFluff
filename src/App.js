@@ -8,7 +8,9 @@ import Contact from './components/Contact'
 import Apps from "./components/login/log&reg"
 // import logreg from "./components/login/log&reg"
 // import Hero from "./components/Hero"
+import intro from "./components/Intro"
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Intro from "./components/Intro";
 
 function App() {
 
@@ -29,6 +31,9 @@ function App() {
           </Route>
           <Route exact path="/Contact">
             <Contact/>
+          </Route>
+          <Route exact path="/Intro">
+            <Intro/>
           </Route>
         </Switch> 
       </div>
