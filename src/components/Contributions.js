@@ -4,7 +4,6 @@ import Help from '../assets/help.png';
 
 const Contributions = () => {
     return (
-        
         <div className="contributions">
             <h2>CONTRIBUTIONS</h2>
             <div className="cards">
