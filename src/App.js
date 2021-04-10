@@ -19,25 +19,6 @@ function App() {
           {/* <Home/>
         <Apps/>
         <Contact/> */}
-<<<<<<< HEAD
-        <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route exact path="/Apps">
-          <Apps />
-          </Route>
-          <Route exact path="/Intro">
-            <Intro/>
-          </Route>
-          <Route exact path="/Instruction">
-            <Instruction/>
-          </Route>
-          <Route exact path="/Contact">
-            <Contact/>
-          </Route>
-        </Switch> 
-=======
           <Switch>
             <Route exact path="/">
               <Home />
@@ -59,7 +40,6 @@ function App() {
             </Route>
           </Switch> 
         </div>
->>>>>>> 51e4b7395bac0d1ac7c6f8f8d1706e870df999aa
       </div>
     </Router>
   );
