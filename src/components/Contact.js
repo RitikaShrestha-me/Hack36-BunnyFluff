@@ -10,6 +10,7 @@ function Contact() {
         <div className="titleHolder">
           <h2>Get in Touch</h2>
         </div>
+        <div className="conform">
         <Form
           name="normal_login"
           className="login-form"
@@ -73,7 +74,9 @@ function Contact() {
               Submit
             </Button>
           </Form.Item>
+          
         </Form>
+        </div>
       </div>
     </div>  
   );
