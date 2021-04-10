@@ -4,40 +4,44 @@ import './components/login/style.scss'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Contact from './components/Contact'
-// import { Login , Register } from "./components/login/index"
 import Apps from "./components/login/log&reg"
 import Donate from "./components/Donate"
-// import logreg from "./components/login/log&reg"
-// import Hero from "./components/Hero"
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Intro from "./components/Intro"
+import Instruction from "./components/Instruction"
 function App() {
 
   return (
-   <Router>
-   <div className="App">
-      <Navbar/>
-      <div className="contents">
-        {/* <Home/>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="contents">
+          {/* <Home/>
         <Apps/>
         <Contact/> */}
-        <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route exact path="/Apps">
-          <Apps />
-          </Route>
-          <Route exact path="/Contact">
-            <Contact/>
-          </Route>
-          <Route exact path="/Donate">
-            <Donate/>
-          </Route>
-        </Switch> 
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/Apps">
+              <Apps />
+            </Route>
+            <Route exact path="/Contact">
+              <Contact />
+            </Route>
+            <Route exact path="/Donate">
+              <Donate />
+              <Route exact path="/Intro">
+                <Intro />
+              </Route>
+              <Route exact path="/Instruction">
+                <Instruction />
+              </Route>
+            </Route>
+          </Switch> 
+        </div>
       </div>
-    </div>
-     </Router> 
+    </Router>
   );
 }
 

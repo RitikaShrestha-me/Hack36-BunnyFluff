@@ -9,9 +9,13 @@ const About = () => {
             <div className="about-changeMakers">
                 <h1>CHANGE MAKERS</h1>
                 <p>People who want to help others directly but don't have enough money or resources, can request for it and fulfill their deeds.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             </p>
+            
             </div>
-        </div>
+            
+            </div>
+       
      );
+     
 }
  
 export default About;
