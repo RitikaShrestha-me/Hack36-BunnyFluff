@@ -41,7 +41,7 @@ const Hero = () => {
                     color: 'white',
                     backgroundColor: '#3a006f',
                 }} >
-                   <Link to = '/Apps'> Sign In </Link>
+                   <Link to = '/Apps' className = 'btn-link'> Sign In </Link>
                        
                 </button>
                 
@@ -50,7 +50,7 @@ const Hero = () => {
                     color: '#3a006f',
                     backgroundColor: 'inherit',
                 }}>
-                    <Link to = '/Apps'> Get Contribution</Link>
+                    <Link to = '/Apps' className = 'btn-link'> Get Contribution</Link>
                 </button>
             </div>
         </div>

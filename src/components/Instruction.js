@@ -37,7 +37,7 @@ const Instruction = () => {
                     </list>
                 </p>
                 </div>
-            </div>
+            </div><br /><br /><br />
         </div>
     );
 }

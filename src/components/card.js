@@ -1,26 +1,20 @@
 import React from 'react'
 
-// import Help from '../assets/help.png';
-
 function Card(props){
-    
     return (
-        <div className='card' onClick={redirect()}>
-            <div>
+        <div className='card' onClick={event =>  window.location.href= './donate'}>
+            <div className = 'card-image'>
                 <img alt='' src={props.imageUrl} className='image' />
             </div>
-            <div>
+            <div className = 'card-title'>
                 <h3>{props.title}</h3>
-            </div>
-            <div>
+            </div><br />
+            <div className = 'card-body'>
                 <p>{props.body}</p>
             </div>
         </div>
     );
 }
 
-function redirect(){
-
-}
 
 export default Card;

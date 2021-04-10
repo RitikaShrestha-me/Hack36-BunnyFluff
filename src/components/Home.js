@@ -9,10 +9,14 @@ const Home = () => {
         <div>
             <Hero />
             <About />
+            <Contributions />
             <Intro />
             <Instruction />
+<<<<<<< HEAD
             <Contributions />
             <Contact />
+=======
+>>>>>>> 51e4b7395bac0d1ac7c6f8f8d1706e870df999aa
         </div>
     );
 }

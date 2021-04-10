@@ -85,7 +85,7 @@
   display: block;
   height: 40vh;
   width: auto;
-  z-index: -1;
+  z-index: -2;
   margin: 10vh auto;
 }
 
@@ -101,27 +101,30 @@
 .dot-left,.dot-right{
     position: absolute;
     width: 10rem;
+    z-index: -2;
     opacity: .3;
     &-content{
       position: absolute;
       background: rgba(200,200,200,0.2);
       backdrop-filter: blur(3px);
-      padding:0rem 2rem;
+      padding:1rem 2rem;
       max-width: 15rem;
     }
 }
 
 .dot-left-content{
-  top:6rem;
+  top:5rem;
   left:2rem;
+  z-index: -1;
 }
 .dot-right {
   right:0;
   top:8rem;
   &-content{
-    padding:0;
-    right:2rem;
-    top:0rem;
+    padding: 0;
+    z-index: -1;
+    right: 2rem;
+    top: -2rem;
   }
 }
 
@@ -131,6 +134,10 @@
   z-index: 1;
   display: block;
   background-color: white;
+  h2{
+    font-weight: 800;
+    font-size: 30px;
+  }
   .cards{
     display: flex;
     margin-top: 10vh;
@@ -139,6 +146,34 @@
   }
 }
 
+//Donate
+.donate{
+  padding: 15vh;
+  h4{
+    color: #777;
+  }
+  h2{
+    margin: 1rem;
+  }
+  &-card{
+    width: 20rem;
+    &-image{
+      .image{
+        width: 310px;
+        height: 180px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.donate-fund-cards, .donate-stuff-cards, .donate-food-cards{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+// Card
 .card{
   background-color: rgb(247, 247, 247);
   border-radius: 10px;
@@ -148,6 +183,19 @@
     width: 70%;
     max-height: 40%;
   }
+  &-body{
+    width: 90%;
+    color: #777;
+    font-weight: 600;
+  }
+  &-title{
+    font-size: 20px;
+  }
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* About */
@@ -178,10 +226,15 @@
 
 .about-contributors>p, .about-changeMakers>p{
   width: 60%;
+  margin: 1rem 0.5rem;
   line-height: 1.5;
   font-weight: 600;
 }
 
+
+//login
+.App{
+  width: 100vw;
 .Aboutcontent
 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -212,9 +265,33 @@
 
 }
 
-.about-intro>h2{
-  margin-top: 1.5em;
+//Button
+.btn {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  background-color: #3a006f;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &-link{
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:focus {
+    outline: none;
+  }
 }
+.about-intro{
+  h2{
+    margin-top: 1.5em;
+  }
+}
+<<<<<<< HEAD
 
 
 // ********************Contact form******************************
@@ -281,4 +358,6 @@ Form.item
   align-items: center;
   margin: 5px auto 0;
   z-index: 99;
+=======
+>>>>>>> 51e4b7395bac0d1ac7c6f8f8d1706e870df999aa
 }
