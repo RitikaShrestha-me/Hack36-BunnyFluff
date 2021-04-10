@@ -1,6 +1,7 @@
 import hopeImage from '../assets/hope-hpe.png';    
 import hopeO from '../assets/hope-o.png';    
 
+
 const Hero = () => {
     return ( 
         <div className="hero-section">

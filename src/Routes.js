@@ -4,7 +4,7 @@
 // /**
 //  * Import all page components here
 //  */
-// import Login from './components/Login';
+//  import Login from './components/login';
 // import Register from './components/Register';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -15,8 +15,8 @@
 //  */
 // export default (
 //   <Route path="/" component={Home}>
-//     <Route path="/Register" component={Register} />
-//     <Route path="/Login" component={Login} />
-//     <Route path="/some/Contacts" component={Contact} />
+//     <Route path="/login/register" component={Register} />
+//     <Route path="/login/login" component={Login} />
+//     <Route path="/Contacts" component={Contact} />
 //   </Route>
 // );

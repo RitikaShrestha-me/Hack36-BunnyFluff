@@ -1,22 +1,40 @@
-import './App.css';
+import React from "react";
+import './App.scss';
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import Login from './components/Login'
-import Register from './components/Register'
 import Contact from './components/Contact'
+// import { Login , Register } from "./components/login/index"
+import Apps from "./components/login/log&reg"
+// import Hero from "./components/Hero"
+// import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+  //  <Router>
+   <div className="App">
       <Navbar/>
       <div className="contents">
-        <Home />
-        <Login />
-        <Register />
-        <Contact />
+        <Home/>
+        <Apps/>
+        <Contact/>
+        {/* <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path="/Apps">
+            <Apps/>
+          </Route>
+          <Route exact path="/Contact">
+            <Contact/>
+          </Route>
+        </Switch>  */}
       </div>
     </div>
+    /* </Router> */
   );
 }
 
+
 export default App;
+
+
