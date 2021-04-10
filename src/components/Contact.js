@@ -1,74 +1,82 @@
-import React, { useState } from "react";
-import "../App.scss";
-import { db } from "../firebase";
+import React from 'react';
 
-const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+import { Form, Input, Button, Checkbox } from 'antd';
+const { TextArea } = Input;
 
-  const [loader, setLoader] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoader(true);
-
-    db.collection("contacts")
-      .add({
-        name: name,
-        email: email,
-        message: message,
-      })
-      .then(() => {
-        setLoader(false);
-        alert("Your message has been submitted👍");
-      })
-      .catch((error) => {
-        alert(error.message);
-        setLoader(false);
-      });
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
+function Contact() {
   return (
-    <div class="basebox">
-    <form className="form" onSubmit={handleSubmit}>
-      <h1>Contact Us </h1>
-
-      <label>Name</label>
-      <input
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-
-      <label>Email</label>
-      <input
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <label>Message</label>
-      <textarea
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
-
-      <button
-        type="submit"
-        style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
-      >
-        Submit
-      </button>
-    </form>
-    </div>
+    <div id="contact" className="block contactBlock">
+      <div className="container-fluid">
+        <div className="titleHolder">
+          <h2>Get in Touch</h2>
+        </div>
+        <Form
+          name="normal_login"
+          className="login-form"
+          initialValues={{ remember: true }}
+        >
+          <Form.Item
+            name="fullname"
+            rules={[
+              { 
+                required: true,
+                message: 'Please enter your full name!' 
+              }]
+            }
+          >
+            <Input placeholder="Full Name" />
+          </Form.Item>
+          <Form.Item
+            name="email"
+            rules={[
+              {
+                type: 'email',
+                message: 'The input is not valid E-mail!',
+              },
+              {
+                required: true,
+                message: 'Please input your E-mail!',
+              },
+            ]}
+          >
+            <Input placeholder="Email Address"/>
+          </Form.Item>
+          <Form.Item
+            name="telephone"
+          >
+            <Input placeholder="Telephone" />
+          </Form.Item>
+          <Form.Item
+            name="subject"
+          >
+            <Input placeholder="Subject" />
+          </Form.Item>
+          <Form.Item
+            name="message"
+          >
+            <TextArea placeholder="Message" />
+          </Form.Item>
+          <Form.Item>
+            <Form.Item 
+              name="remember" 
+              valuePropName="checked"
+              noStyle
+              rules={[
+                { validator:(_, value) => value ? Promise.resolve() : Promise.reject('Should accept agreement') },
+              ]}
+            >
+              <Checkbox>I agree with terms and conditions.</Checkbox>
+            </Form.Item>
+          </Form.Item>
+          <Form.Item>
+            <Button type="primary" htmlType="submit" className="login-form-button">
+              Submit
+            </Button>
+          </Form.Item>
+        </Form>
+      </div>
+    </div>  
   );
- 
-};
+}
 
 export default Contact;

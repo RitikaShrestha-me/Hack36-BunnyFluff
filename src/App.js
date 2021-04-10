@@ -25,14 +25,14 @@ function App() {
           <Route exact path="/Apps">
           <Apps />
           </Route>
-          <Route exact path="/Contact">
-            <Contact/>
-          </Route>
           <Route exact path="/Intro">
             <Intro/>
           </Route>
           <Route exact path="/Instruction">
             <Instruction/>
+          </Route>
+          <Route exact path="/Contact">
+            <Contact/>
           </Route>
         </Switch> 
       </div>

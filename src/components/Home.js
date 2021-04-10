@@ -3,6 +3,7 @@ import About from './About'
 import Contributions from './Contributions'
 import Intro from './Intro';
 import Instruction from './Instruction'
+import Contact from './Contact'
 const Home = () => {
     return (
         <div>
@@ -11,6 +12,7 @@ const Home = () => {
             <Intro />
             <Instruction />
             <Contributions />
+            <Contact />
         </div>
     );
 }

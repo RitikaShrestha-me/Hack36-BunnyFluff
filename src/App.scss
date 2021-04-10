@@ -215,3 +215,70 @@
 .about-intro>h2{
   margin-top: 1.5em;
 }
+
+
+// ********************Contact form******************************
+
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-top: 1em;
+}
+
+.block {
+  padding: 60px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.contactBlock .ant-form {
+  max-width: 640px;
+  margin: auto;
+  
+}
+
+.contactBlock .ant-form textarea {
+  min-height: 120px;
+  height: 120px;
+  margin : 1em;
+  
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px;
+  margin: 0 0 40px;
+  color: #3a006f;
+}
+
+button {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  background-color: #3a006f;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #2386c8;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+Form.item
+{
+  width: 27em;
+  height: 40em;
+  position: relative;
+  /* //min-height: 44em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0;
+  z-index: 99;
+}
