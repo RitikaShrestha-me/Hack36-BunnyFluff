@@ -19,8 +19,8 @@ const Donate = () => {
                 <h2>Fund Them</h2>
                 <div className='donate-fund-cards'>
                     <Card
-                        imageUrl={Money1}
-                        title='Person does not have a family or source of income'
+                        imageUrl={Food1}
+                        title='Have not ate since 5 days'
                         redirect='/fund'
                         number = '9876543210'
                         body='You have money and want to help someone fulfill their basic needs? Help by giving money.'
