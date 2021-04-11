@@ -8,7 +8,7 @@ import Stuff1 from '../assets/stuff1.jpg'
 import Stuff2 from '../assets/stuff2.jpg'
 import Stuff3 from '../assets/stuff3.jpg'
 
-import Money1 from '../assets/money1.jpg'
+import Money3 from '../assets/money1.jpg'
 import Money2 from '../assets/money2.jpg'
 import Money3 from '../assets/money1.jpg'
 
