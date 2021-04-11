@@ -29,8 +29,8 @@
     "yarn": "^1.22.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node server",
+    "test": "react-scripts test",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
