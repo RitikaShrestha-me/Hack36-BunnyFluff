@@ -14,11 +14,11 @@ const Intro = () => {
                     help, Contribution, Information Shared, Funds raised, Accessories donated shall help a needy for days. 
                 </p>
                 <p>
-                    We at <b>Hope</b> have started an intiative where the needy ones can be supported with their requirements and the donor, fundraisers and Contributors <i>indeed the Hero's</i> 
-                    can find a platform during this pandemic to reach each other. And Support, Unite and Stand with all together.
+                    We at <u>NewNormal</u> have started an intiative where the needy ones can be supported with their requirements and the donor, fundraisers and Contributors <u>indeed the Heros</u> can 
+                    find a platform during this pandemic to reach each other. And Support, Unite and Stand with all together.
                 </p>
                 <p></p>
-                <p><i>"Donate and Contribute and be the reason for someone's smile. Give what you can, Help whom you want..."</i></p>
+                <p><i>"Donate, Contribute and be the reason for someone's Happiness. Give what you can, Help whom you can..."</i></p>
                 </div>
             </div>
         </div>

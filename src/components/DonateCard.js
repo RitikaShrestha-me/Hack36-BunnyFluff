@@ -1,3 +1,4 @@
+import { Button } from "antd";
 
 function DonateCard(props){
     return (
@@ -11,6 +12,7 @@ function DonateCard(props){
             <div className = 'donate-card-body'>
                 <p>{props.body}</p>
                 <h4>Contact: {props.number}</h4>
+                <Button onClick = {event =>  window.location.href= './Fund'}>Fund It</Button>
             </div>
         </div>
     );

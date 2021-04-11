@@ -2,34 +2,30 @@ import React from "react";
 import loginImg from "../../login.svg";
 
 export class Login extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
         <div className="header">Login</div>
-        <div className="content">
+        <form className="content" action="/validateUser" method="post">
           <div className="image">
-            <img src={loginImg} alt="loginimg"/>
+            <img src={loginImg} alt="loginimg" />
           </div>
           <div className="form">
             <div className="form-group">
-              <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="username" />
+              <label htmlFor="username">Username<span class="required">*</span></label>
+              <input type="text" name="username" placeholder="username" required/>
             </div>
             <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <input type="password" name="password" placeholder="password" />
+              <label htmlFor="password">Password<span class="required">*</span></label>
+              <input type="password" name="password" placeholder="password" required/>
             </div>
           </div>
-        </div>
-        <div className="footer">
-          <button type="button" className="btn">
-            Login
-          </button>
-        </div>
+          <div className="footer">
+            <button type="button" className="btn" type="submit" id="loginBtn">
+              Login
+            </button>
+          </div>
+        </form>
       </div>
     );
   }
