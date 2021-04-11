@@ -19,8 +19,12 @@ Due to the Covid-19 Pandemic, many people have lost their Loved ones, jobs & hea
 2) [Alisha Ahmed](https://github.com/Alisha-Ahmed)
 
 ### Snaps:
-<img src="./src/assets/snap1.png" height=200px><img src="./src/assets/snap2.png" height=200px><img src="./src/assets/snap3.png" height=200px>
-<img src="./src/assets/snap4.png" height=200px><img src="./src/assets/snap5.png" height=200px><img src="./src/assets/snap6.png" height=200px>
+<img src="./src/assets/snap1.png" height=200px>
+<img src="./src/assets/snap2.png" height=200px>
+<img src="./src/assets/snap3.png" height=200px>
+<img src="./src/assets/snap4.png" height=200px>
+<img src="./src/assets/snap5.png" height=200px>
+<img src="./src/assets/snap6.png" height=200px>
  
 #### Made at:
 <a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
